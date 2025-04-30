@@ -20,16 +20,9 @@ td {
 }
 
 .firstcell {
-    background-color: #ffccbc ; 
+    background-color: #ffccbc; 
 }
+
 .secondcell {
-    background-color: #c8e6c9;  
-}
-
-
-@media (max-width: 600px) {
-    td {
-        font-size: 4vw;
-        padding: 10px;
-    }
+    background-color: #c8e6c9; 
 }
