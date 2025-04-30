@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    border: 1px solid #444;
+    padding: 20px;
+    text-align: center;
+    font-size: 2vw;
+    word-wrap: break-word;
+}
+
+.first-cell {
+    background-color: #ffccbc !important; /* บังคับให้สีพื้นหลังใช้ */
+}
+
+.second-cell {
+    background-color: #c8e6c9 !important; /* บังคับให้สีพื้นหลังใช้ */
+}
+
+/* ปรับปรุง appearance บนหน้าจอขนาดเล็ก */
+@media (max-width: 600px) {
+    td {
+        font-size: 4vw;
+        padding: 10px;
+    }
+}
