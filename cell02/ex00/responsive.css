@@ -19,15 +19,14 @@ td {
     word-wrap: break-word;
 }
 
-.first-cell {
-    background-color: #ffccbc !important; /* บังคับให้สีพื้นหลังใช้ */
+.firstcell {
+    background-color: #ffccbc ; 
+}
+.secondcell {
+    background-color: #c8e6c9;  
 }
 
-.second-cell {
-    background-color: #c8e6c9 !important; /* บังคับให้สีพื้นหลังใช้ */
-}
 
-/* ปรับปรุง appearance บนหน้าจอขนาดเล็ก */
 @media (max-width: 600px) {
     td {
         font-size: 4vw;
