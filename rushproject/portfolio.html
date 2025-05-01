@@ -1,53 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            height: 100vh;
-            display: flex;
-            justify-content: center; 
-            align-items: center; 
-            background-image: url("https://i.pinimg.com/736x/e0/4c/2c/e04c2c64127462fad5a5a4243648f3d2.jpg");
-            background-size: cover;
-               
-        }
-           .Portfoliobutton {
-            display: flex;
-            justify-content: center;
-            gap: 100px;
-            z-index: 1;
+        body, html {
+            margin: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f7f7f7; /* พื้นหลังสีอ่อน */
+            color: #333; /* ตัวอักษรสีเข้มเพื่อให้อ่านง่าย */
         }
 
-       
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #fff; /* พื้นหลังแถบนำทางขาว */
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #333; /* สีตัวอักษรในลิงก์ */
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* เมื่อวางเมาส์บนลิงก์ */
+        }
+
+        section {
+            padding: 60px 20px;
+            background-color: #fff; /* พื้นหลังของแต่ละส่วน */
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 2.2em;
+            color: #333;
+            font-weight: 600;
+        }
+
+        section p, section ul {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+            text-align: center; /* จัดข้อความให้อยู่กลาง */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            padding: 8px 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
         button {
-            background-color: palevioletred;
+            background-color: #333;
             color: #fff;
             border: none;
-            padding: 20px 40px;
-            font-size: 1.5em;
+            padding: 16px 40px;
+            font-size: 1.4em;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 50px;
             transition: background-color 0.3s ease;
+            min-width: 180px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
         }
 
         button:hover {
-            background-color: pink; 
+            background-color: #555; /* เมื่อ hover เปลี่ยนสี */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    
-    <div class="Portfoliobutton">
-        <a href="jayda.html" target="_blank">
-            <button>JAYDA</button>
-        </a>
-        <a href="fang.html" target="_blank">
-            <button>FANG</button>
-        </a>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#jayda">Jayda</a></li>
+            <li><a href="#fang">Fang</a></li>
+        </ul>
+    </nav>
+
+    <center>
+    <section id="jayda">
+        <h2>Jayda's Resume</h2>
+        <img src="src/f9418a88-f888-4dae-b8ca-4cade453fed2.jpg" height="300" alt="Jayda's Photo">
+        <h3>Phornphatsorn Chitladaphorn</h3>
+        <p>A oridinary college student </p>
+
+        <h3>Education</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Curriculum</th>
+                    <th>Institute</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2020 - 2022</td>
+                    <td>High School Program (Science-Math)</td>
+                    <td>Bodindecha (Sing Singhaseni) 2 School</td>
+                </tr>
+                <tr>
+                    <td>2023 - Present</td>
+                    <td>Bachelor of Engineering in Computer Engineering</td>
+                    <td>Khon Kaen University</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Contact</h3>
+        <p>Email: jaeda.251@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/Jaydajade" target="_blank">My GitHub</a></p>
+    </section>
+</center>
+    <section id="fang">
+        <h2>Fang's Resume</h2>
+        <p>blaaa</p>
+       
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Our Resume</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
